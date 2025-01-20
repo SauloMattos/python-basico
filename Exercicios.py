@@ -1,4 +1,4 @@
-n = 9
+n = 15
 
 for x in range(1, n+1):
     print(x,'- Exercicio',x)
@@ -154,5 +154,42 @@ elif op == 9:
     elif imc >= 40.0:
         print('IMC:', imc)
         print('Obesidade grau 3! (Mórbida)')
+    else:
+        print('Valores incorretos!')
+
+
+####################
+### Exercício 10 ###
+####################
+elif op == 10:
+    print("Exercício 10: Média de um aluno")
+
+    a = float(input('Digite a primeira nota:'))
+    b = float(input('Digite a segunda nota:'))
+    c = float(input('Digite a terceira nota:'))
+    
+    m = round((a + b + c) / 3, 1)
+
+    print('Sua média é de:', m)
+
+####################
+### Exercício 11 ###
+####################
+elif op == 11:
+    print("Exercício 11: Aluno aprovado ou reprovado")
+
+    a = float(input('Digite a primeira nota:'))
+    b = float(input('Digite a segunda nota:'))
+    c = float(input('Digite a terceira nota:'))
+    d = float(input('Digite a quarta nota:'))
+    
+    m = round((a + b + c + d) / 4, 1)
+
+    if m <= 6.9:
+        print('Média final:', m)
+        print('Aluno reprovado!')
+    elif m >= 7.0:
+        print('Média final:', m)
+        print('Aluno aprovado!')
     else:
         print('Valores incorretos!')
