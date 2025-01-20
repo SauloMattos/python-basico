@@ -156,4 +156,3 @@ elif op == 9:
         print('Obesidade grau 3! (Mórbida)')
     else:
         print('Valores incorretos!')
-
