@@ -1,3 +1,5 @@
+import datetime
+
 n = 15
 
 for x in range(1, n+1):
@@ -237,3 +239,32 @@ elif op == 13:
         print('\nIdade fora dos padrões')
     else:
         print('\nEntrada incorreta')
+
+####################
+### Exercício 14 ###
+####################
+elif op == 14:
+    print("\nExercício 14: Receber 2 valores e inverte-los\n")
+
+    A = int(input('Digite o valor de A: '))
+    B = int(input('Digite o valor de B: '))
+
+    A, B = B, A
+
+    print(f'\nValor de A: {A}')
+    print(f'Valor de B: {B}\n')
+
+####################
+### Exercício 15 ###
+####################
+elif op == 15:
+    print("\nExercício 15: Anos, meses e dias de vida de uma pessoa (365 dias e 30 dias no mes)\n")
+
+    nasc = int(input('Digite o ano em que você nasceu: '))
+    ano_atual = datetime.date.today().year
+
+    anos = ano_atual - nasc
+    meses = anos * 12
+    dias = anos * 365
+
+    print(f'Anos: {anos}, Meses: {meses}, Dias: {dias}')
